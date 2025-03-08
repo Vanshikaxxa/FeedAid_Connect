@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
 
       <button className="bg-green-500 text-white font-semibold py-2 px-4 border border-green-700 rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:bg-green-600 hover:scale-105 active:bg-blue-700">
-        Donate
+        Donate Money
       </button>
     </nav>
   );
