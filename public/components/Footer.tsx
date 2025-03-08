@@ -55,6 +55,9 @@ export default function Footer() {
         <div className="space-y-2">
           <h3 className="text-lg font-semibold">Get In Touch</h3>
           <nav className="flex flex-col space-y-2">
+            <Link href="/about" className="hover:underline">
+              FAQS
+            </Link>
             <Link href="/" className="hover:underline">
               Contact Us
             </Link>
@@ -96,6 +99,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className=""></div>
     </footer>
   );
 }
