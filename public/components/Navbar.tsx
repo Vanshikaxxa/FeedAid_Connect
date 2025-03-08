@@ -20,7 +20,7 @@ const Navbar = () => {
         <li className="hover:underline">Charity</li>
       </div>
 
-      <button className="bg-[#51cf66] text-white font-semibold px-4 py-2 border border-[#69db7c] rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:bg-[#37b24d] hover:scale-101 flex items-center gap-2 cursor-pointer">
+      <button className="bg-[#51cf66] text-white font-semibold px-4 py-2 border border-[#69db7c] rounded-sm shadow-lg transition duration-300 ease-in-out transform hover:bg-[#37b24d] hover:scale-101 flex items-center gap-2 cursor-pointer">
         Donate Money
         <BiDollar />
       </button>
