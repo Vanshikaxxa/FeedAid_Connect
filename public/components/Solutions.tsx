@@ -4,7 +4,7 @@ import { CiDeliveryTruck, CiSearch, CiCreditCard1 } from "react-icons/ci";
 
 const Solutions = () => {
   return (
-    <div className="bg-[#c7f9cc]">
+    <div className="bg-[#c7f9cc] h-60 flex-col min-h-full">
       <h4 className="text-center text-xl font-bold">Solutions</h4>
 
       <div className="text-center my-2">
