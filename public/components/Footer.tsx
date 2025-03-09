@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#007B7F] text-white flex py-8 justify-between w-screen">
+    <footer className="bg-[#007B7F] text-white flex py-8 justify-between">
       <div className="mx-5 space-y-5">
         <div className="w-15 h-15 relative ">
           <Image

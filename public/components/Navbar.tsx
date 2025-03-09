@@ -5,7 +5,7 @@ const Navbar = () => {
   ``;
   return (
     /*main nav */
-    <nav className="w-screen bg-[#007B7F] text-[#FFFFFF] flex justify-between items-center p-3">
+    <nav className="bg-[#007B7F] text-[#FFFFFF] flex justify-between items-center p-3">
       <div className="pl-8 flex justify-start">
         <img
           src="/images/logo/Logo3.webp"

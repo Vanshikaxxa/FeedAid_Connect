@@ -3,7 +3,7 @@ import React from "react";
 const Title = () => {
   return (
     <>
-      <section className="flex bg-[#fa7602] items-center justify-between w-screen">
+      <div className="flex bg-[#fa7602] items-center justify-between ">
         <div className="">
           <img src="/images/charity1.jpg" alt="" className="w-120 h-auto " />
         </div>
@@ -16,7 +16,7 @@ const Title = () => {
             hunger gaps and deliver food efficiently.
           </h2>
         </div>
-      </section>
+      </div>
     </>
   );
 };
