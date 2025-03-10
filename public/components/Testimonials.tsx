@@ -1,6 +1,8 @@
 import React from "react";
-import { GoPeople } from "react-icons/go";
-import { CiDeliveryTruck, CiSearch, CiCreditCard1 } from "react-icons/ci";
+import { FaRegMap } from "react-icons/fa6";
+import { MdDeliveryDining } from "react-icons/md";
+import { GiImpactPoint } from "react-icons/gi";
+import { IoPeople } from "react-icons/io5";
 
 const Testimonials = () => {
   return (
@@ -68,7 +70,7 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 m-6 justify-items-center">
           <div className="flex flex-col items-center text-center w-full max-w-sm">
             <div className="p-6 bg-[#ffcfbf] rounded-full">
-              <GoPeople className="text-6xl text-[#f68b6a]" />
+              <FaRegMap className="text-8xl text-[#f68b6a]" />
             </div>
             <h3 className="mt-4 font-semibold text-[#163d4a]">
               Map your program needs
@@ -77,7 +79,7 @@ const Testimonials = () => {
 
           <div className="flex flex-col items-center text-center w-full max-w-sm">
             <div className="p-6 bg-[#ffcfbf] rounded-full">
-              <CiDeliveryTruck className="text-6xl text-[#f68b6a]" />
+              <MdDeliveryDining className="text-8xl text-[#f68b6a]" />
             </div>
             <h1 className="mt-4 font-semibold text-[#163d4a]">
               Set up deliveries to transport food
@@ -86,14 +88,14 @@ const Testimonials = () => {
 
           <div className="flex flex-col items-center text-center w-full max-w-sm">
             <div className="p-6 bg-[#ffcfbf] rounded-full">
-              <CiSearch className="text-6xl text-[#f68b6a]" />
+              <GiImpactPoint className="text-8xl text-[#f68b6a]" />
             </div>
             <h3 className="mt-4 font-semibold text-[#163d4a]">Track impact</h3>
           </div>
 
           <div className="flex flex-col items-center text-center w-full max-w-sm">
             <div className="p-6 bg-[#ffcfbf] rounded-full">
-              <CiCreditCard1 className="text-6xl text-[#f68b6a]" />
+              <IoPeople className="text-8xl text-[#f68b6a]" />
             </div>
             <h3 className="mt-4 font-semibold text-[#163d4a]">
               Engage with customer and improve outcomes
