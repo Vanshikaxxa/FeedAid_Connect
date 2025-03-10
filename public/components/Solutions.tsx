@@ -4,7 +4,7 @@ import { CiDeliveryTruck, CiSearch, CiCreditCard1 } from "react-icons/ci";
 
 const Solutions = () => {
   return (
-    <div className="bg-[#d1efe5] flex flex-col min-screen h-[500px]">
+    <div className="bg-[#d1efe5] flex flex-col min-screen min-h-[500px] w-full px-4">
       <h4 className="text-center text-[#163d4a] text-4xl md:m-6">Solutions</h4>
 
       <div className="text-center text-xl text-[#163d4a] my-10">
@@ -12,8 +12,8 @@ const Solutions = () => {
         management.
       </div>
 
-      <div className="flex justify-center gap-18 my-6">
-        <div className="flex flex-col items-center text-center max-w-xs">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 m-6 justify-items-center">
+        <div className="flex flex-col items-center text-center w-full max-w-sm">
           <div className="p-4 bg-[#b0dccd] rounded-full">
             <GoPeople className="text-6xl text-[#0b2a33]" />
           </div>
@@ -23,7 +23,7 @@ const Solutions = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center text-center max-w-xs">
+        <div className="flex flex-col items-center text-center w-full max-w-sm">
           <div className="p-4 bg-[#b0dccd] rounded-full">
             <CiDeliveryTruck className="text-6xl text-[#0b2a33]" />
           </div>
@@ -33,7 +33,7 @@ const Solutions = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center text-center max-w-xs">
+        <div className="flex flex-col items-center text-center w-full max-w-sm">
           <div className="p-4 bg-[#b0dccd] rounded-full">
             <CiSearch className="text-6xl text-[#0b2a33]" />
           </div>
@@ -43,7 +43,7 @@ const Solutions = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center text-center max-w-xs">
+        <div className="flex flex-col items-center text-center w-full max-w-sm">
           <div className="p-4 bg-[#b0dccd] rounded-full">
             <CiCreditCard1 className="text-6xl text-[#0b2a33]" />
           </div>
