@@ -34,21 +34,19 @@ const Navbar = () => {
         <BiDollar />
       </button>
 
-      {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center">
         <button onClick={toggleMenu} className="text-white">
           {isOpen ? <BiX size={24} /> : <BiMenu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[#007B7F] text-white flex flex-col items-center md:hidden">
+        <div className="absolute top-16 right-0 w-[40vw] h-80 p-3 bg-[#007B7F] text-white flex flex-col items-center md:hidden rounded-2xl shadow-2xl  m-auto list-none">
           {["Home", "About Us", "Donate", "Volunteer", "Charity"].map(
             (item) => (
               <li key={item} className="relative cursor-pointer group p-4">
                 {item}
-                <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                <span className="absolute left-1/2 bottom-0 w-0 h-0.5 bg-white transition-all 500s group-hover:w-[10vw] group-hover:left-0"></span>
               </li>
             )
           )}
