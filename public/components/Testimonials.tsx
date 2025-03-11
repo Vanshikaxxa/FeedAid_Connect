@@ -23,7 +23,7 @@ const Testimonials = () => {
             <img
               src="\images\testimonials\testimonials 1.jpg"
               alt="Maureen Krouse"
-              className="w-12 h-12 rounded-full"
+              className="w-16 h-16 rounded-full"
             />
             <div>
               <p className="font-semibold text-[#163d4a]">Maureen Krouse</p>
@@ -46,7 +46,7 @@ const Testimonials = () => {
             <img
               src="\images\testimonials\testimonials 3.jpg"
               alt="Sarah Morris"
-              className="w-12 h-12 rounded-full"
+              className="w-16 h-16 rounded-full"
             />
             <div>
               <p className="font-semibold text-[#163d4a]">Sarah Morris</p>
@@ -75,7 +75,7 @@ const Testimonials = () => {
             <img
               src="\images\testimonials\testimonials 2.jpg"
               alt="Abbe Stern"
-              className="w-12 h-12 rounded-full"
+              className="w-16 h-16 rounded-full"
             />
             <div>
               <p className="font-semibold text-[#163d4a]">Abbe Stern</p>
@@ -102,7 +102,7 @@ const Testimonials = () => {
             <img
               src="\images\testimonials\testimonials 4.jpg"
               alt="Francesca Boulton"
-              className="w-12 h-12 rounded-full"
+              className="w-16 h-16 rounded-full"
             />
             <div>
               <p className="font-semibold text-[#163d4a]">Francesca Boulton</p>
@@ -153,6 +153,11 @@ const Testimonials = () => {
             </h3>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center py-6 pd-8">
+        <button className="bg-[#26634e] text-2xl hover:bg-[#283c43] text-white font-semibold px-6 py-4 rounded-sm shadow-lg transition-colors duration-300 cursor-pointer">
+          Learn more about programs
+        </button>
       </div>
     </div>
   );
