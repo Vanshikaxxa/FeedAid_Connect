@@ -2,9 +2,9 @@ import React from "react";
 
 const Title = () => {
   return (
-    <div className="relative min-h-screen bg-[#fa7602] flex items-center p-4 sm:p-6">
+    <div className="relative min-h-screen bg-gradient-to-r from-blue-200 to-teal-200 flex items-center p-4 sm:p-6">
       <div className="w-full max-w-[90%] sm:max-w-[65%] p-4 sm:p-8">
-        <h1 className="text-white text-5xl sm:text-8xl py-3 sm:py-5 font-bold">
+        <h1 className="text-red-300 text-5xl sm:text-8xl py-3 sm:py-5 font-bold">
           Connecting Generosity with Those in Need.
         </h1>
         <h2 className="text-gray-600 my-3 sm:my-5 text-xl sm:text-3xl hover:animate-pulse font-semibold py-3 sm:py-5">
