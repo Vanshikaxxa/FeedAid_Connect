@@ -2,12 +2,12 @@ import React from "react";
 
 const Title = () => {
   return (
-    <div className="relative min-h-screen bg-[#fa7602] flex items-center p-3 sm:p-6">
-      <div className="w-full max-w-[65%] p-4 sm:p-8">
-        <h1 className="text-white text-5xl sm:text-8xl py-5 sm:py-5 font-bold">
+    <div className="relative min-h-screen bg-[#fa7602] flex items-center p-4 sm:p-6">
+      <div className="w-full max-w-[90%] sm:max-w-[65%] p-4 sm:p-8">
+        <h1 className="text-white text-5xl sm:text-8xl py-3 sm:py-5 font-bold">
           Connecting Generosity with Those in Need.
         </h1>
-        <h2 className="text-gray-600 my-6 sm:my-5 text-xl sm:text-3xl hover:animate-pulse font-semibold py-3 sm:py-5">
+        <h2 className="text-gray-600 my-3 sm:my-5 text-xl sm:text-3xl hover:animate-pulse font-semibold py-3 sm:py-5">
           FeedAid Connect unites communities, leveraging technology to bridge
           hunger gaps and deliver food efficiently.
         </h2>
