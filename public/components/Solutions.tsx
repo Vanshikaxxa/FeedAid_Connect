@@ -14,7 +14,10 @@ const Solutions = () => {
         management.
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-12 mx-8 justify-items-center">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 my-12 mx-8 justify-items-center"
+        data-aos="fade-up"
+      >
         {[
           {
             icon: <GoPeople className="text-7xl text-[#0b2a33]" />,
