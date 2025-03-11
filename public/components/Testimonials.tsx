@@ -6,13 +6,13 @@ import { IoPeople } from "react-icons/io5";
 
 const Testimonials = () => {
   return (
-    <div className="bg-[#fcf8f7] flex flex-col min-screen min-h-[500px] w-full px-2 py-2">
+    <div className="bg-[#fcf8f7] flex flex-col min-screen min-h-[500px] w-full px-2 py-8">
       <h4 className="text-center text-[#0b2a33] font-semibold text-4xl md:my-12">
         Reviews from partners
       </h4>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 justify-center mx-auto max-w-6xl">
-        <div className="bg-[#ffffff] p-8 border rounded-2xl shadow-md">
-          <h5 className="text-xl font-semibold">Lankenau Medical Center</h5>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 justify-center mx-auto max-w-6xl py-2 px-4">
+        <div className="bg-[#ffffff] p-8 rounded-2xl shadow-md">
+          <h5 className="text-2xl font-semibold">Lankenau Medical Center</h5>
           <p className="mt-4 text-gray-600">
             "Through the generosity of Food Connect, we are able to deliver
             fresh food and produce to address the food insecurity and chronic
@@ -20,8 +20,8 @@ const Testimonials = () => {
             access to fresh food in their daily lives."
           </p>
         </div>
-        <div className="bg-[#ffffff] p-8 border rounded-2xl shadow-md">
-          <h5 className="text-xl font-semibold">SF New Deal</h5>
+        <div className="bg-[#ffffff] p-8 rounded-2xl shadow-md">
+          <h5 className="text-2xl font-semibold">SF New Deal</h5>
           <p className="mt-4 text-gray-600">
             "It's been a joy working with Food Connect! Their dispatch, drivers,
             and support team are responsive, kind & thorough, and their services
@@ -29,8 +29,8 @@ const Testimonials = () => {
             operations."
           </p>
         </div>
-        <div className="bg-[#ffffff] p-8 border rounded-2xl shadow-md">
-          <h5 className="text-xl font-semibold">
+        <div className="bg-[#ffffff] p-8 rounded-2xl shadow-md">
+          <h5 className="text-2xl font-semibold">
             Children’s Hospital of Philadelphia
           </h5>
           <p className="mt-4 text-gray-600">
@@ -45,8 +45,8 @@ const Testimonials = () => {
             growth of CHOP’s Food Pharmacy.”
           </p>
         </div>
-        <div className="bg-[#ffffff] p-8 border rounded-2xl shadow-md">
-          <h5 className="text-xl font-semibold">18 Reasons</h5>
+        <div className="bg-[#ffffff] p-8 rounded-2xl shadow-md">
+          <h5 className="text-2xl font-semibold">18 Reasons</h5>
           <p className="mt-4 text-gray-600">
             "Working with Food Connect has enabled us to deliver healthy
             ingredients to diabetic patients all over the San Francisco Bay
