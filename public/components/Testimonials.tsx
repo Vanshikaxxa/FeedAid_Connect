@@ -18,14 +18,17 @@ export default function Home() {
 
   const Testimonials = () => {
     return (
-      <div
-        className="bg-[#fcf8f7] flex flex-col min-screen min-h-[500px] w-full px-2 py-8"
-        data-aos="fade-up"
-      >
-        <h4 className="text-center text-[#0b2a33] font-semibold text-4xl md:my-12">
+      <div className="bg-[#fcf8f7] flex flex-col min-screen min-h-[500px] w-full px-2 py-8">
+        <h4
+          className="text-center text-[#0b2a33] font-semibold text-4xl md:my-12"
+          data-aos="fade-up"
+        >
           Reviews from partners
         </h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center mx-auto max-w-6xl py-4">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center mx-auto max-w-6xl py-4"
+          data-aos="fade-up"
+        >
           <div className="bg-[#ffffff] p-10 rounded-2xl shadow-md">
             <h5 className="text-2xl font-semibold">Lankenau Medical Center</h5>
             <p className="mt-4 text-xl text-[#163d4a]">
