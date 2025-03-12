@@ -82,7 +82,7 @@ const FeaturedIn: React.FC = () => {
 
         <div className="bg-[#ffffff] p-10 md:p-12 justify-center rounded-2xl shadow-md mx-auto mt-20 max-w-4xl">
           <img
-            src="\images\logo\featured1.png"
+            src="\images\logo\featuredin.png"
             alt="Maureen Krouse"
             className="w-20 h-20 justify-center mx-auto rounded-full m-4"
           />
