@@ -44,10 +44,8 @@ export default function CommunitySignupForm({
           <X size={24} />
         </button>
         <div className="flex justify-center mt-8 mb-2">
-          <div className="w-12 h-12 rounded-full bg-white border-2 border-green-700 flex items-center justify-center">
-            <div className="scale-160 text-green-700 transform w-4.5">
-              <FaLocationArrow />
-            </div>
+          <div className="scale-200 text-green-700 transform w-4.5">
+            <FaLocationArrow />
           </div>
         </div>
 
