@@ -27,12 +27,12 @@ const FeaturedIn: React.FC = () => {
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      const scrollAmount = 400;
+      const scrollAmount = 300;
 
       if (direction === "left") {
-        if (scrollLeft === 0) {
+        if (scrollLeft <= 0) {
           scrollRef.current.scrollTo({
-            left: scrollWidth,
+            left: scrollWidth - clientWidth,
             behavior: "instant",
           });
         }
