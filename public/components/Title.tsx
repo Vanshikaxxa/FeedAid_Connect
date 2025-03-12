@@ -1,23 +1,44 @@
 import React from "react";
+import Link from "next/link";
+
+const NavbarItem: React.FC<{ title: string; href: string }> = ({
+  title,
+  href,
+}) => {
+  return (
+    <Link
+      href={href}
+      className="text-gray-600 hover:underline underline-offset-4 transition-all ease-out duration-300"
+    >
+      {title}
+    </Link>
+  );
+};
 
 const Title = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-blue-200 to-teal-200 flex items-center p-4 sm:p-6">
+    <div className="relative min-h-screen bg-[#d8f3dc] flex items-center sm:p-6 pt-32">
       <div className="w-full max-w-[90%] sm:max-w-[65%] p-4 sm:p-8">
-        <h1 className="text-red-300 text-5xl sm:text-8xl py-3 sm:py-5 font-bold">
+        <h1 className="text-[#2c6e49] text-5xl sm:text-8xl mt-15 sm:py-5 font-bold">
           Connecting Generosity with Those in Need.
         </h1>
-        <h2 className="text-gray-600 my-3 sm:my-5 text-xl sm:text-3xl hover:animate-pulse font-semibold py-3 sm:py-5">
+        <h2 className="text-gray-600 sm:my-5 text-xl sm:text-3xl hover:animate-pulse font-semibold sm:py-5">
           FeedAid Connect unites communities, leveraging technology to bridge
           hunger gaps and deliver food efficiently.
         </h2>
-        <div className="flex space-x-4 m-4 sm:m-6">
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition duration-200">
-            Join our Community
-          </button>
-          <button className="bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-600 transition duration-200">
+        <div className="flex space-x-4 sm:m-6">
+          <Link
+            href="/donate"
+            className="bg-[#0077b6] hover:bg-[#023e8a] text-white font-semibold px-6 py-2 rounded-lg shadow-lg"
+          >
+            Join Our Community
+          </Link>
+          <Link
+            href="/donate"
+            className="bg-[#2c6e49] hover:bg-[#1b4332] text-white font-semibold px-6 py-2 rounded-lg shadow-lg"
+          >
             Donate Us
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex flex-col items-center">
       {/* Top Bar */}
-      <div className="bg-[#e8f5e9] w-full flex justify-end max-w-7xl text-sm px-8 py-2">
+      <div className="bg-[#fdffe8] w-full flex justify-end max-w-7xl text-sm px-8 py-2">
         {!isMobile && (
           <div className="flex gap-8 text-gray-600">
             {[
