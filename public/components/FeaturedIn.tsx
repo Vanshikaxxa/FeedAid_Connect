@@ -1,23 +1,106 @@
-import React from "react";
+"use client";
 
-const FeaturedIn = () => {
+import React, { useRef } from "react";
+import { GoChevronLeft, GoChevronRight } from "react-icons/go";
+
+const FeaturedIn: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const logos = [
+    { src: "/images/logo/featured1.png", alt: "BElla duke" },
+    { src: "/images/logo/featured2.png", alt: "pepsi" },
+    { src: "/images/logo/featured3.png", alt: "burger king" },
+    { src: "/images/logo/featured4.png", alt: "BElla duke" },
+    { src: "/images/logo/featured5.png", alt: "BElla duke" },
+    { src: "/images/logo/featured6.png", alt: "BElla duke" },
+    { src: "/images/logo/featured12.png", alt: "BElla duke" },
+    { src: "/images/logo/featured8.png", alt: "BElla duke" },
+    { src: "/images/logo/featured9.png", alt: "BElla duke" },
+    { src: "/images/logo/featured10.png", alt: "BElla duke" },
+    { src: "/images/logo/featured11.png", alt: "BElla duke" },
+  ];
+
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      const scrollAmount = 300;
+
+      if (direction === "left") {
+        if (scrollLeft === 0) {
+          scrollRef.current.scrollTo({
+            left: scrollWidth,
+            behavior: "instant",
+          });
+        }
+        scrollRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        if (scrollLeft + clientWidth >= scrollWidth) {
+          scrollRef.current.scrollTo({ left: 0, behavior: "instant" });
+        }
+        scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }
+  };
+
   return (
-    <div className="bg-[#f4f3ee] text-white flex flex-col min-screen min-h-[550px] w-full px-12">
-      <h4 className="text-center text-[#163d4a] font-bold text-4xl md:m-8">
-        Featured In
-      </h4>
-      <div className="bg-[#ffffff] p-15 rounded-2xl max-w-200 shadow-md">
-        <p className="mt-4 text-center text-3xl text-[#163d4a]">
-          “Partnering with FoodAid Connect has been a game changer for our meal
-          delivery program!”
-        </p>
-        <div className="mt-8">
-          <p className="font-semibold  text-center text-[#163d4a]">
-            Jennifer LeBarre
+    <div className="flex justify-center items-center min-h-screen bg-[#f2e9e4] w-full px-12">
+      <div className="text-white flex flex-col w-full max-w-7xl">
+        <h4 className="text-center font-bold text-[#163d4a] text-4xl md:m-8">
+          Featured In
+        </h4>
+
+        <div className="relative mt-4  flex items-center">
+          <button
+            onClick={() => scroll("left")}
+            className="absolute left-0 z-10 p-2 bg-[#f2e9e4] text-[#163d4a]"
+          >
+            <GoChevronLeft size={32} />
+          </button>
+
+          <div
+            ref={scrollRef}
+            className="overflow-x-auto whitespace-nowrap flex space-x-20 px-5 mx-12 no-scrollbar cursor-pointer"
+          >
+            {[...logos, ...logos].map((logo, index) => (
+              <div key={index} className="flex-shrink-0">
+                <img src={logo.src} alt={logo.alt} className="h-24 w-auto" />
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => scroll("right")}
+            className="absolute right-0 z-10 p-2 bg-[#f2e9e4] text-[#163d4a] cursor-pointer"
+          >
+            <GoChevronRight size={32} />
+          </button>
+        </div>
+
+        <div className="bg-[#ffffff] p-10 md:p-12 rounded-2xl shadow-md mx-auto mt-20 max-w-4xl">
+          <p className="text-center font-semibold text-3xl m-5 text-[#163d4a]">
+            “Partnering with FoodAid Connect has been a game changer for our
+            meal delivery program!”
           </p>
-          <p className="text-[#163d4a] text-center">Executive Director</p>
+          <div className="">
+            {" "}
+            <hr className="border-t border-gray-200 my-3" />{" "}
+            <p className="font-semibold text-center text-[#163d4a]">
+              Jennifer LeBarre
+            </p>
+            <p className="text-[#163d4a] text-center">Executive Director</p>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .no-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </div>
   );
 };
