@@ -7,23 +7,27 @@ const FeaturedIn: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const logos = [
-    { src: "/images/logo/featured1.png", alt: "BElla duke" },
-    { src: "/images/logo/featured2.png", alt: "pepsi" },
-    { src: "/images/logo/featured3.png", alt: "burger king" },
-    { src: "/images/logo/featured4.png", alt: "BElla duke" },
-    { src: "/images/logo/featured5.png", alt: "BElla duke" },
-    { src: "/images/logo/featured6.png", alt: "BElla duke" },
-    { src: "/images/logo/featured12.png", alt: "BElla duke" },
-    { src: "/images/logo/featured8.png", alt: "BElla duke" },
-    { src: "/images/logo/featured9.png", alt: "BElla duke" },
-    { src: "/images/logo/featured10.png", alt: "BElla duke" },
-    { src: "/images/logo/featured11.png", alt: "BElla duke" },
+    {
+      src: "/images/logo/featured1.png",
+      alt: "Burger King",
+      class: "w-12 h-12",
+    },
+    { src: "/images/logo/featured2.png", alt: "kfc" },
+    { src: "/images/logo/featured3.png", alt: "la pinos'z" },
+    { src: "/images/logo/featured4.png", alt: "zomato" },
+    { src: "/images/logo/featured5.png", alt: "swiggy" },
+    { src: "/images/logo/featured6.png", alt: "Big basket" },
+    { src: "/images/logo/featured12.png", alt: "food city" },
+    { src: "/images/logo/featured8.png", alt: "fresh to home" },
+    { src: "/images/logo/featured9.png", alt: "food for less" },
+    { src: "/images/logo/featured10.png", alt: "amazon" },
+    { src: "/images/logo/featured11.png", alt: "red bull" },
   ];
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      const scrollAmount = 300;
+      const scrollAmount = 400;
 
       if (direction === "left") {
         if (scrollLeft === 0) {
@@ -43,13 +47,13 @@ const FeaturedIn: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#f2e9e4] w-full px-12 p-13">
-      <div className="text-white flex flex-col w-full max-w-7xl">
-        <h4 className="text-center font-bold text-[#163d4a] text-4xl md:m-8">
+    <div className="flex justify-center items-center min-h-screen bg-[#f2e9e4] w-full px-12 p-10">
+      <div className="text-white flex flex-col w-full max-w-6xl">
+        <h4 className="text-center font-bold text-[#163d4a] text-5xl md:m-8">
           Featured In
         </h4>
 
-        <div className="relative mt-4  flex items-center">
+        <div className="relative mt-8  flex items-center">
           <button
             onClick={() => scroll("left")}
             className="absolute left-0 z-10 p-2 bg-[#f2e9e4] text-[#163d4a]"
@@ -63,7 +67,7 @@ const FeaturedIn: React.FC = () => {
           >
             {[...logos, ...logos].map((logo, index) => (
               <div key={index} className="flex-shrink-0">
-                <img src={logo.src} alt={logo.alt} className="h-24 w-auto" />
+                <img src={logo.src} alt={logo.alt} className="h-12 w-auto" />
               </div>
             ))}
           </div>
@@ -80,7 +84,7 @@ const FeaturedIn: React.FC = () => {
           <img
             src="\images\logo\featured1.png"
             alt="Maureen Krouse"
-            className="w-16 h-16 justify-center mx-auto rounded-full m-4"
+            className="w-20 h-20 justify-center mx-auto rounded-full m-4"
           />
           <p className="text-center font-semibold text-3xl m-5 text-[#163d4a]">
             “Partnering with FoodAid Connect has been a game changer for our
@@ -88,8 +92,8 @@ const FeaturedIn: React.FC = () => {
           </p>
           <div className="">
             {" "}
-            <hr className="border-t border-gray-200 my-3" />{" "}
-            <p className="font-semibold text-center text-[#163d4a]">
+            <hr className="border-t border-gray-200 mt-12 my-3" />{" "}
+            <p className="font-semibold text-center mt-6 text-[#163d4a]">
               Jennifer LeBarre
             </p>
             <p className="text-[#163d4a] text-center">Executive Director</p>
