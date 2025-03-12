@@ -17,7 +17,7 @@ const NavbarItem: React.FC<{ title: string; href: string }> = ({
 
 const Title = () => {
   return (
-    <div className="relative min-h-screen bg-[#d8f3dc] flex items-center sm:p-6 pt-32">
+    <div className="relative min-h-screen bg-[#c3fffe] flex items-center sm:p-6 pt-32">
       <div className="w-full max-w-[90%] sm:max-w-[65%] p-4 sm:p-8">
         <h1 className="text-[#2c6e49] text-5xl sm:text-8xl mt-15 sm:py-5 font-bold">
           Connecting Generosity with Those in Need.
@@ -26,7 +26,7 @@ const Title = () => {
           FeedAid Connect unites communities, leveraging technology to bridge
           hunger gaps and deliver food efficiently.
         </h2>
-        <div className="flex space-x-4 sm:m-6">
+        <div className="flex space-x-4">
           <Link
             href="/donate"
             className="bg-[#0077b6] hover:bg-[#023e8a] text-white font-semibold px-6 py-2 rounded-lg shadow-lg"
