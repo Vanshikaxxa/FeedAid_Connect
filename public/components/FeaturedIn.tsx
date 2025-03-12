@@ -43,7 +43,7 @@ const FeaturedIn: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#f2e9e4] w-full px-12">
+    <div className="flex justify-center items-center min-h-screen bg-[#f2e9e4] w-full px-12 p-13">
       <div className="text-white flex flex-col w-full max-w-7xl">
         <h4 className="text-center font-bold text-[#163d4a] text-4xl md:m-8">
           Featured In
@@ -76,7 +76,12 @@ const FeaturedIn: React.FC = () => {
           </button>
         </div>
 
-        <div className="bg-[#ffffff] p-10 md:p-12 rounded-2xl shadow-md mx-auto mt-20 max-w-4xl">
+        <div className="bg-[#ffffff] p-10 md:p-12 justify-center rounded-2xl shadow-md mx-auto mt-20 max-w-4xl">
+          <img
+            src="\images\logo\featured1.png"
+            alt="Maureen Krouse"
+            className="w-16 h-16 justify-center mx-auto rounded-full m-4"
+          />
           <p className="text-center font-semibold text-3xl m-5 text-[#163d4a]">
             “Partnering with FoodAid Connect has been a game changer for our
             meal delivery program!”
