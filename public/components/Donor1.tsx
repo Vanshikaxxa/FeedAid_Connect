@@ -24,10 +24,10 @@ const Donor1 = () => {
           </p>
 
           <div className="flex items-start mt-4 space-x-4">
-            <button className="bg-green-700 text-white py-3 px-6 rounded-lg hover:bg-green-800 transition duration-300 ease-in-out shadow-md">
+            <button className="bg-gradient-to-r from-green-500 to-green-700 text-white py-5 px-12 rounded-3xl hover:from-green-600 hover:to-green-800 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
               Request a pickup
             </button>
-            <button className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out shadow-md">
+            <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-5 px-12 rounded-3xl hover:from-blue-600 hover:to-blue-900 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
               Become a donor
             </button>
           </div>
