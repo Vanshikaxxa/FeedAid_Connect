@@ -7,6 +7,8 @@ import Testimonials from "@/public/components/Testimonials";
 import Title from "@/public/components/Title";
 import FeaturedIn from "@/public/components/FeaturedIn";
 import CommunitySignupForm from "@/public/components/community-signup-form";
+import Mission from "@/public/components/Mission";
+import Impact from "@/public/components/Impact";
 
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
@@ -29,6 +31,8 @@ export default function Home() {
       <Title />
       <FeaturedIn />
       <Solutions />
+      <Mission />
+      <Impact />
       <Testimonials />
       <Footer />
       {showForm && <CommunitySignupForm onClose={handleClose} />}
