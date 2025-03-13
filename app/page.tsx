@@ -10,6 +10,9 @@ import CommunitySignupForm from "@/public/components/community-signup-form";
 import Mission from "@/public/components/Mission";
 import Impact from "@/public/components/Impact";
 import Signup from "@/public/components/Signup";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
@@ -28,16 +31,18 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
-      <Title />
-      <FeaturedIn />
-      <Solutions />
-      <Mission />
-      <Impact />
-      <Testimonials />
-      <Signup />
-      <Footer />
-      {showForm && <CommunitySignupForm onClose={handleClose} />}
+      <div className={inter.className}>
+        <Navbar />
+        <Title />
+        <FeaturedIn />
+        <Solutions />
+        <Mission />
+        <Impact />
+        <Testimonials />
+        <Signup />
+        <Footer />
+        {showForm && <CommunitySignupForm onClose={handleClose} />}
+      </div>
     </>
   );
 }
