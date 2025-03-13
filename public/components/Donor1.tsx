@@ -2,7 +2,7 @@ import React from "react";
 
 const Donor1 = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-200 to-teal-200 flex flex-col md:flex-row items-center justify-center p-5 md:p-10 rounded-lg shadow-lg h-auto md:h-96">
+    <div className="bg-gradient-to-r from-blue-200 to-teal-200 flex flex-col md:flex-row items-center justify-center p-5 md:p-10 rounded-lg shadow-lg h-auto md:h-96 my-15">
       <img
         src="/images/donor/don1.webp"
         alt="Donor Image"

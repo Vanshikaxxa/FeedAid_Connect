@@ -9,6 +9,7 @@ import FeaturedIn from "@/public/components/FeaturedIn";
 import CommunitySignupForm from "@/public/components/community-signup-form";
 import Mission from "@/public/components/Mission";
 import Impact from "@/public/components/Impact";
+import Signup from "@/public/components/Signup";
 
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
@@ -34,6 +35,7 @@ export default function Home() {
       <Mission />
       <Impact />
       <Testimonials />
+      <Signup />
       <Footer />
       {showForm && <CommunitySignupForm onClose={handleClose} />}
     </>
