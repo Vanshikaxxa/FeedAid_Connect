@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandsHelping,
+  faPlusCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Donor1 = () => {
   return (
@@ -7,11 +12,12 @@ const Donor1 = () => {
         <img
           src="/images/donor/wallp2.png"
           alt="Food Donation Background"
-          className="bg-cover w-full h-full"
+          className="bg-cover w-full h-auto"
         />
 
-        <div className="absolute left-0 top-0 bg-none p-10 rounded-lg h-full w-3/4 flex flex-col justify-center translate-y-10">
+        <div className="absolute left-0 top-0 bg-none p-10 rounded-lg h-full w-1/2 flex flex-col justify-center translate-y-10">
           <h1 className="text-6xl font-bold mb-4 text-green-950 text-left">
+            <FontAwesomeIcon icon={faHandsHelping} className="mr-2" />
             Donate Food
           </h1>
           <p className="mb-6 text-black text-left text-2xl font-medium leading-relaxed">
@@ -24,10 +30,12 @@ const Donor1 = () => {
           </p>
 
           <div className="flex items-start mt-4 space-x-4">
-            <button className="bg-gradient-to-r from-green-500 to-green-700 text-white py-5 px-12 rounded-3xl hover:from-green-600 hover:to-green-800 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+            <button className="bg-gradient-to-r from-green-500 to-green-700 text-white py-5 px-12 rounded-3xl hover:from-green-600 hover:to-green-800 transition duration-300 ease-in-out shadow-lg transform hover:scale-105 flex items-center">
+              <FontAwesomeIcon icon={faPlusCircle} className="mr-2" />
               Request a pickup
             </button>
-            <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-5 px-12 rounded-3xl hover:from-blue-600 hover:to-blue-900 transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+            <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-5 px-12 rounded-3xl hover:from-blue-600 hover:to-blue-900 transition duration-300 ease-in-out shadow-lg transform hover:scale-105 flex items-center">
+              <FontAwesomeIcon icon={faPlusCircle} className="mr-2" />
               Become a donor
             </button>
           </div>
